@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import AuthorList from './components/Author.js'
+import TopNavPanel from './components/Menu.js'
+import Footer from './components/Footer.js'
 import axios from 'axios'
 
 class App extends React.Component {
@@ -57,7 +59,9 @@ class App extends React.Component {
   render () {
     return (
       <div>
+        <TopNavPanel />
         <AuthorList authors={this.state.authors} />
+        <Footer />
       </div>
     )
   }
