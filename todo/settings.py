@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     #'django_filter',
     'authapp',
     'corsheaders',
+    'memoapp',
 
 
 ]
