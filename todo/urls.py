@@ -16,13 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from authapp.views import AuthorModelViewSet
-from memoapp.views import ProjectModelViewSet, TodoModelViewSet
+from authapp.views import AuthorModelViewSet, AuthorCustomViewSet
+from memoapp.views import ProjectModelViewSet, TodoModelViewSet, ProjectDjangoFilterViewSet, TodoDjangoFilterViewSet
 
 router = DefaultRouter()
 router.register('authors', AuthorModelViewSet)
 router.register('project', ProjectModelViewSet)
 router.register('todo', TodoModelViewSet)
+router.register('authors_custom', AuthorCustomViewSet)
+router.register('project_filter', ProjectDjangoFilterViewSet)
+router.register('todo_filter', TodoDjangoFilterViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

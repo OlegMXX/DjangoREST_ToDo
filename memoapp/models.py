@@ -17,6 +17,6 @@ class Todo(models.Model):
     created_by = models.ForeignKey(Author, on_delete=models.CASCADE)
     active = models.BooleanField(default=True)
 
-    def close(self, *args):
+    def delete(self, *args):
         self.active = False
         self.save()
