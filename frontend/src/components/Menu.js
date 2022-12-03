@@ -1,14 +1,16 @@
 import React from 'react'
-
+//import {BrowserRouter} from "react-router-dom"
 
 function TopNavPanel() {
     return (
-        <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+      //<BrowserRouter>
+      <div class="topnav">
+        <a class="active" href="/todoes">Todo</a>
+        <a href="/authors">Authors</a>
+        <a href="/projects">Projects</a>
         <a href="#about">About</a>
       </div>
+      //</BrowserRouter>
     );
 }
 
