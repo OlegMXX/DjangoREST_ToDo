@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const AuthorItem = ({author}) => {
     return (
         <tr>
@@ -20,18 +19,17 @@ const AuthorItem = ({author}) => {
     )
 }
 
-
 const AuthorList = ({authors}) => {
     return (
         <table>
             <th>
-                Username
+                User name
             </th>
             <th>
                 First name
             </th>
             <th>
-                Last name
+                Last Name
             </th>
             <th>
                 Email
@@ -40,5 +38,4 @@ const AuthorList = ({authors}) => {
         </table>
     )
 }
-
 export default AuthorList

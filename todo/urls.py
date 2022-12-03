@@ -23,9 +23,9 @@ router = DefaultRouter()
 router.register('authors', AuthorModelViewSet)
 router.register('project', ProjectModelViewSet)
 router.register('todo', TodoModelViewSet)
-router.register('authors_custom', AuthorCustomViewSet)
-router.register('project_filter', ProjectDjangoFilterViewSet)
-router.register('todo_filter', TodoDjangoFilterViewSet)
+#router.register('authors_custom', AuthorCustomViewSet)
+#router.register('project_filter', ProjectDjangoFilterViewSet)
+#router.register('todo_filter', TodoDjangoFilterViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
