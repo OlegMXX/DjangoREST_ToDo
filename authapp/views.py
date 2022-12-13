@@ -10,6 +10,7 @@ class AuthorModelViewSet(ModelViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorModelSerializer
 
+
 class AuthorCustomViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.UpdateModelMixin, GenericViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorModelCustomSerializer
