@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'authapp',
     'corsheaders',
     'memoapp',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'drf_yasg',
 
 
 ]
@@ -159,4 +160,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ],
+    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.URLPathVersioning'
 }

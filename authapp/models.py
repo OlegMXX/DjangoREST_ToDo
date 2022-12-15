@@ -10,3 +10,5 @@ class Author(models.Model):
     email = models.CharField(
         max_length=256,
         unique=True)
+    is_superuser = models.BooleanField(default=False)
+    is_staff = models.BooleanField(default=False)
