@@ -6,7 +6,14 @@ from .models import Author
 class AuthorModelSerializer(ModelSerializer):
     class Meta:
         model = Author
-        fields = '__all__'
+        fields = ('username', 'firstname', 'lastname', 'email')
+
+
+class AuthorFullModelSerializer(ModelSerializer):
+    class Meta:
+        model = Author
+        fields = '__all__'      
+
 
 class AuthorModelCustomSerializer(ModelSerializer):
     class Meta:
