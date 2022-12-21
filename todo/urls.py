@@ -19,6 +19,7 @@ from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
+from graphene_django.views import GraphQLView
 from authapp.views import AuthorListAPIView, AuthorModelViewSet, AuthorCustomViewSet
 from memoapp.views import ProjectModelViewSet, TodoModelViewSet, ProjectDjangoFilterViewSet, TodoDjangoFilterViewSet
 
@@ -51,4 +52,5 @@ urlpatterns = [
     path('api/<str:version>/authors/', AuthorListAPIView.as_view()),
     #path('swagger<str:format>/', schema_view.without_ui()),
     path('swagger/', schema_view.with_ui('swagger')),
+    path('graphql/', GraphQLView.as_view(graphiql=True)),
     ]
