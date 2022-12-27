@@ -4,6 +4,9 @@ const AuthorItem = ({author}) => {
     return (
         <tr>
             <td>
+                {author.id}
+            </td>
+            <td>
                 {author.username}
             </td>
             <td>
@@ -22,6 +25,9 @@ const AuthorItem = ({author}) => {
 const AuthorList = ({authors}) => {
     return (
         <table>
+            <td>
+                id
+            </td>
             <th>
                 User name
             </th>
